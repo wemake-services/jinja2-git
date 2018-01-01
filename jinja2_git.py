@@ -19,5 +19,6 @@ class GitExtension(Extension):
         """Main method to render data into the template."""
         lineno = next(parser.stream).lineno
 
+        # TODO: add {% gitcommit 'short' %} feature
         result = self.call_method('_commit_hash', [], lineno=lineno)
         return nodes.Output([result], lineno=lineno)
