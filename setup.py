@@ -49,4 +49,5 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: Implementation :: CPython',
     ],
+    keywords='jinja2 jinja2-extension jinja2-plugin git',
 )
