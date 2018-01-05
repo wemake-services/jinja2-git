@@ -16,7 +16,7 @@ Jinja2 extension to handle git-specific things
 Reasoning
 ~~~~~~~~~
 
-This pligin is used to render commit hash in ``jinja2`` templates.
+This plugin is used to render commit hash in ``jinja2`` templates.
 We are using it to render our template version in ``cookicutter``:
 
 - `wemake-django-template <https://github.com/wemake-services/wemake-django-template>`_
