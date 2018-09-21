@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "jinja2-git"
+version = "0.1.0"
+description = "Jinja2 extension to handle git-specific things"
+
+license = "MIT"
+
+authors = [
+    "Nikita Sobolev <mail@sobolenv.me>"
+]
+
+readme = "README.rst"  # Markdown files are supported
+
+repository = "https://github.com/sobolevn/jinja2-git"
+homepage = "https://github.com/sobolevn/jinja2-git"
+
+keywords = [
+    "jinja2",
+    "jinja2-extension",
+    "jinja2-plugin",
+    "git",
+]
+
+classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Environment :: Console',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: Implementation :: CPython',
+    ]
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
