@@ -9,7 +9,7 @@ authors = [
     "Nikita Sobolev <mail@sobolenv.me>"
 ]
 
-readme = "README.rst"  # Markdown files are supported
+readme = "README.md"  # Markdown files are supported
 
 repository = "https://github.com/sobolevn/jinja2-git"
 homepage = "https://github.com/sobolevn/jinja2-git"
