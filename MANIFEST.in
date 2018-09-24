@@ -1,2 +1,0 @@
-include jinja2_git.py
-include LICENSE README.rst
