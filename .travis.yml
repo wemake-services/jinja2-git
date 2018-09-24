@@ -5,10 +5,12 @@ python:
   - 3.6
 
 install:
-  - pip install tox-travis wheel
+  - pip install poetry
+  - poetry install
+  - poetry develop
 
 script:
-  - tox
+  - poetry run pytest
 
 after_success:
   - pip install coveralls
