@@ -6,7 +6,6 @@
 [![Dependencies Status](https://img.shields.io/pypi/pyversions/jinja2-git.svg)](https://pypi.python.org/pypi/jinja2-git)
 
 ## Reasoning
----------
 
 This plugin is used to render commit hash in `jinja2` templates. We are
 using it to render our template version in `cookicutter`:
@@ -15,7 +14,6 @@ using it to render our template version in `cookicutter`:
 - [wemake-vue-template](https://github.com/wemake-services/wemake-vue-template)
 
 ## Usage
------
 
 Add it as an extension for
 [jinja2](http://jinja.pocoo.org/docs/2.10/extensions/) or
@@ -32,7 +30,6 @@ template = env.from_string('Commit is: {% gitcommit %}')
 ```
 
 ## Installation
-------------
 
 ```bash
 $ pip install jinja2-git
