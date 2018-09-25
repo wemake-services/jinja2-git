@@ -1,21 +1,20 @@
-Jinja2 extension to handle git-specific things
-==============================================
+# Jinja2 extension to handle git-specific things
 
-[![image](https://travis-ci.org/sobolevn/jinja2-git.svg?branch=master)](https://travis-ci.org/sobolevn/jinja2-git)
-[![image](https://coveralls.io/repos/github/sobolevn/jinja2-git/badge.svg?branch=master)](https://coveralls.io/github/sobolevn/jinja2-git?branch=master)
-[![image](https://badge.fury.io/py/jinja2-git.svg)](http://badge.fury.io/py/jinja2-git)
-[![image](https://img.shields.io/pypi/pyversions/jinja2-git.svg)](https://pypi.python.org/pypi/jinja2-git)
+[![Travis](https://travis-ci.org/sobolevn/jinja2-git.svg?branch=master)](https://travis-ci.org/sobolevn/jinja2-git)
+[![Coveralls](https://coveralls.io/repos/github/sobolevn/jinja2-git/badge.svg?branch=master)](https://coveralls.io/github/sobolevn/jinja2-git?branch=master)
+[![PyPI version](https://badge.fury.io/py/jinja2-git.svg)](http://badge.fury.io/py/jinja2-git)
+[![Dependencies Status](https://img.shields.io/pypi/pyversions/jinja2-git.svg)](https://pypi.python.org/pypi/jinja2-git)
 
-Reasoning
+## Reasoning
 ---------
 
 This plugin is used to render commit hash in `jinja2` templates. We are
 using it to render our template version in `cookicutter`:
 
--   [wemake-django-template](https://github.com/wemake-services/wemake-django-template)
--   [wemake-vue-template](https://github.com/wemake-services/wemake-vue-template)
+- [wemake-django-template](https://github.com/wemake-services/wemake-django-template)
+- [wemake-vue-template](https://github.com/wemake-services/wemake-vue-template)
 
-Usage
+## Usage
 -----
 
 Add it as an extension for
@@ -24,7 +23,7 @@ Add it as an extension for
 
 And then inside a template:
 
-``` {.sourceCode .python}
+```python
 from jinja2 import Environment
 
 env = Environment(extensions=['jinja2_git.GitExtension'])
@@ -32,9 +31,9 @@ template = env.from_string('Commit is: {% gitcommit %}')
 # => Commit is: c644682f4899d7e98147ce3a61a11bb13c52b3a0
 ```
 
-Installation
+## Installation
 ------------
 
-``` {.sourceCode .bash}
+```bash
 $ pip install jinja2-git
 ```
