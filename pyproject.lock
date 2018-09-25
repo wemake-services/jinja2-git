@@ -453,9 +453,9 @@ python-versions = "*"
 version = "1.2.1"
 
 [metadata]
-content-hash = "b32a72780bfdf5d43564a19759c550c878e8a9902d9cdc8345fdbad32cc7be96"
+content-hash = "f51c474cdff1c264bb0e184ee3de0edc572f075cc92c0a1cc483fb91aeac45d2"
 platform = "*"
-python-versions = "~2.7 || ^3.6"
+python-versions = "~2.7 || ^3.6 || ^3.7"
 
 [metadata.hashes]
 atomicwrites = ["0312ad34fcad8fac3704d441f7b317e50af620823353ec657a53e981f92920c0", "ec9ae8adaae229e4f8446952d204a3e4b5fdd2d099f9be3aaf556120135fb3ee"]
