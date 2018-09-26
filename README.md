@@ -31,6 +31,16 @@ template = env.from_string('Commit is: {% gitcommit %}')
 # => Commit is: c644682f4899d7e98147ce3a61a11bb13c52b3a0
 ```
 
+Or short version:
+
+```python
+from jinja2 import Environment
+
+env = Environment(extensions=['jinja2_git.GitExtension'])
+template = env.from_string('Commit is: {% gitcommit short=True %}')
+# => Commit is: c644682
+```
+
 ## Installation
 ------------
 
