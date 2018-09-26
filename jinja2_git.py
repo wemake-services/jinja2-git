@@ -16,7 +16,7 @@ class GitExtension(Extension):
             output = subprocess.check_output(['git',
                                               'rev-parse',
                                               '--short',
-                                              'HEAD'
+                                              'HEAD',
                                               ])
         else:
             output = subprocess.check_output(['git', 'rev-parse', 'HEAD'])
