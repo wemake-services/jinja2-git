@@ -13,7 +13,11 @@ class GitExtension(Extension):
 
     def _commit_hash(self, *args):
         if args[0]:
-            output = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'])
+            output = subprocess.check_output(['git',
+                                              'rev-parse',
+                                              '--short',
+                                              'HEAD'
+                                              ])
         else:
             output = subprocess.check_output(['git', 'rev-parse', 'HEAD'])
         return output.decode('utf-8').strip()
