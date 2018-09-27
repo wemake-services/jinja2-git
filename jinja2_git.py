@@ -11,7 +11,7 @@ class GitExtension(Extension):
 
     tags = {'gitcommit'}
 
-    def _commit_hash(self, short=False):
+    def _commit_hash(self, short):
         params = ['git', 'rev-parse', 'HEAD']
 
         if short:
