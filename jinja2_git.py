@@ -30,6 +30,5 @@ class GitExtension(Extension):
         else:
             short = nodes.Const(False)
 
-        args = [short]
-        result = self.call_method('_commit_hash', args, [], lineno=lineno)
+        result = self.call_method('_commit_hash', [short], [], lineno=lineno)
         return nodes.Output([result], lineno=lineno)
