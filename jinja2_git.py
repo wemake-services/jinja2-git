@@ -11,15 +11,13 @@ class GitExtension(Extension):
 
     tags = {'gitcommit'}
 
-    def _commit_hash(self, *args):
-        if args[0]:
-            output = subprocess.check_output(['git',
-                                              'rev-parse',
-                                              '--short',
-                                              'HEAD',
-                                              ])
-        else:
-            output = subprocess.check_output(['git', 'rev-parse', 'HEAD'])
+    def _commit_hash(self, short=False):
+        params = ['git', 'rev-parse', 'HEAD']
+
+        if short:
+            params.insert(2, '--short')
+
+        output = subprocess.check_output(params)
         return output.decode('utf-8').strip()
 
     def parse(self, parser):
