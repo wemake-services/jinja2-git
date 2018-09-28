@@ -1,8 +1,8 @@
 # Version 0.2.0
 ## Features
-- Adds optional param `short` which returns shorter commit hash than default.
+- Adds optional param `short` which returns shorter commit hash than default
 ## Testing
-- Adds test-case for `short` commit-version.
+- Adds test-case for `short` commit-version
 ## Misc
 - Adds `poetry` as the main project tool
 - Removed `setup.py`
