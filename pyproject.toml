@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "jinja2-git"
-version = "0.1.0"
+version = "0.2.0"
 description = "Jinja2 extension to handle git-specific things"
 
 license = "MIT"
 
 authors = [
-    "Nikita Sobolev <mail@sobolenv.me>"
+    "Nikita Sobolev <mail@sobolenv.me>",
+    "Mikhail Akimov <daggerito@gmail.com>"
 ]
 
 readme = "README.md"  # Markdown files are supported

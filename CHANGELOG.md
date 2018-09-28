@@ -4,16 +4,12 @@
 
 - Adds optional param `short` which returns shorter commit hash
 
-## Testing
-
-- Adds test-case for `short` commit-version.
-
 ## Misc
 
-- Adds `poetry` as the main project tool.
-- Removed `setup.py`.
-- `README.rst` converted to `README.md`.
-- Python 3.7 now supported.
+- Adds `poetry` as the main project tool
+- Removed `setup.py`
+- `README.rst` converted to `README.md`
+- Python 3.7 is now supported
 
 ## Version 0.1.0
 
