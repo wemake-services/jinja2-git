@@ -36,7 +36,7 @@ jinja2 = "^2.10"
 
 
 [tool.poetry.dev-dependencies]
-flake8 = "^3.5"
+flake8 = "^3.7"
 flake8-builtins = "^1.4"
 flake8-commas = "^2.0"
 flake8-quotes = "^1.0"
