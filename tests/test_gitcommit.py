@@ -2,17 +2,20 @@
 
 import subprocess
 
+_SHORT_COMMIT_LENGTH = 7
+_FULL_COMMIT_LENGTH = 40
+
 
 def test_commit_length(environment):
     template = environment.from_string('{% gitcommit %}')
 
-    assert len(template.render()) == 40
+    assert len(template.render()) == _FULL_COMMIT_LENGTH
 
 
 def test_short_commit_length(environment):
     template = environment.from_string('{% gitcommit short=True %}')
 
-    assert len(template.render()) == 7
+    assert len(template.render()) == _SHORT_COMMIT_LENGTH
 
 
 def test_is_commit(environment):

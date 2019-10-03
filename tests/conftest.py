@@ -4,6 +4,9 @@ import pytest
 from jinja2 import Environment
 
 
-@pytest.fixture(scope='function')
+@pytest.fixture()
 def environment():
-    return Environment(extensions=['jinja2_git.GitExtension'])
+    return Environment(
+        extensions=['jinja2_git.GitExtension'],
+        autoescape=True,
+    )

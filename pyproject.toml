@@ -1,6 +1,10 @@
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style.toml"
+
+
 [tool.poetry]
 name = "jinja2-git"
-version = "0.2.0"
+version = "1.0.0"
 description = "Jinja2 extension to handle git-specific things"
 
 license = "MIT"
@@ -10,7 +14,7 @@ authors = [
     "Mikhail Akimov <daggerito@gmail.com>"
 ]
 
-readme = "README.md"  # Markdown files are supported
+readme = "README.md"
 
 repository = "https://github.com/sobolevn/jinja2-git"
 homepage = "https://github.com/sobolevn/jinja2-git"
@@ -23,30 +27,34 @@ keywords = [
 ]
 
 classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Environment :: Console',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent'
-    ]
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: Jinja2",
+]
+
 
 [tool.poetry.dependencies]
-python = "~2.7 || ^3.6 || ^3.7"
+python = "^3.6"
 jinja2 = "^2.10"
 
 
 [tool.poetry.dev-dependencies]
-flake8 = "^3.7"
-flake8-builtins = "^1.4"
-flake8-commas = "^2.0"
-flake8-quotes = "^2.1"
-flake8-pep3101 = "^1.2"
-flake8-comprehensions = "^1.4"
-flake8-blind-except = "^0.1"
-flake8-docstrings = "^1.5"
-flake8-pytest = "^1.3"
 pytest = "^4.6"
 pytest-cov = "^2.7"
-pytest-isort = "^0.3.1"
-pytest-flake8 = "^1.0"
-pep8-naming = "^0.8"
+pytest-randomly = "^3.1"
+
+wemake-python-styleguide = "^0.12.5"
+flake8-pytest-style = "^0.1.3"
+flake8-pytest = "^1.3"
+nitpick = "^0.21.1"
+
+safety = "^1.8"
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
