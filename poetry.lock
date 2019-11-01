@@ -526,7 +526,7 @@ description = "Flake8 plugin to enforce the same lint configuration (flake8, iso
 name = "nitpick"
 optional = false
 python-versions = ">=3.5,<4.0"
-version = "0.21.1"
+version = "0.21.2"
 
 [package.dependencies]
 attrs = "*"
@@ -929,7 +929,7 @@ version = "0.6.0"
 more-itertools = "*"
 
 [metadata]
-content-hash = "425907dca6f7714f9f4bf11957021342f1f8bee8810c5d2751ff8bf6cef30aee"
+content-hash = "c6db42ff31f2bf41df2e704dd28ac10643b061bb47429a0cf953305103900ee5"
 python-versions = "^3.6"
 
 [metadata.hashes]
@@ -984,7 +984,7 @@ marshmallow = ["077b4612f5d3b9333b736fdc6b963d2b46d409070f44ff3e6c4109645c673e83
 marshmallow-polyfield = ["963a01e80bca5cb4da42b8d2f7e6e90946257ae22d22ff2ed104a8a863eeb0c6"]
 mccabe = ["ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42", "dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"]
 more-itertools = ["409cd48d4db7052af495b09dec721011634af3753ae1ef92d2b32f73a745f832", "92b8c4b06dac4f0611c0729b2f2ede52b2e1bac1ab48f089c7ddc12e26bb60c4"]
-nitpick = ["fb2f5f6e5c1ae8f351b0f9c01bafe68c35d87480e9bac7064cf7d15491d70db9", "ff451b41fbfe50ecda0522756a5628d6861c8c4f25c183d65bcd4efede0c8c95"]
+nitpick = ["d0a8118359e72262de9a626c452646b7dc8eeaff663decb2d8279fadfce2b072", "f24c25ec14078aaedfa988e1c993f5ca9a4d71dac7507f735c52c66f6260518f"]
 packaging = ["28b924174df7a2fa32c1953825ff29c61e2f5e082343165438812f00d3a7fc47", "d9551545c6d761f3def1677baf08ab2a3ca17c56879e70fecba2fc4dde4ed108"]
 pbr = ["2c8e420cd4ed4cec4e7999ee47409e876af575d4c35a45840d59e8b5f3155ab8", "b32c8ccaac7b1a20c0ce00ce317642e6cf231cf038f9875e0280e28af5bf7ac9"]
 pep8-naming = ["01cb1dab2f3ce9045133d08449f1b6b93531dceacb9ef04f67087c11c723cea9", "0ec891e59eea766efd3059c3d81f1da304d858220678bdc351aab73c533f2fbb"]
