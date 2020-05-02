@@ -4,7 +4,7 @@ style = "https://raw.githubusercontent.com/wemake-services/wemake-python-stylegu
 
 [tool.poetry]
 name = "jinja2-git"
-version = "1.0.0"
+version = "1.1.0"
 description = "Jinja2 extension to handle git-specific things"
 
 license = "MIT"
