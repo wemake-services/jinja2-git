@@ -3,6 +3,13 @@
 We follow Semantic Versions since the `0.1.0` release.
 
 
+## Version 1.1.0
+
+### Features
+
+- Adds `python3.8` support
+
+
 ## Version 1.0.0
 
 ### Features
