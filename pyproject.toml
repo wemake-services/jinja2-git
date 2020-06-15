@@ -44,7 +44,7 @@ jinja2 = "^2.10"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4"
-pytest-cov = "^2.9"
+pytest-cov = "^2.10"
 pytest-randomly = "^3.4"
 
 wemake-python-styleguide = "^0.14"
