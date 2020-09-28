@@ -43,7 +43,7 @@ jinja2 = "^2.10"
 
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.0"
+pytest = "^6.1"
 pytest-cov = "^2.10"
 pytest-randomly = "^3.4"
 
