@@ -493,7 +493,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "nitpick"
-version = "0.23.0"
+version = "0.23.1"
 description = "Flake8 plugin to enforce the same lint configuration (flake8, isort, mypy, pylint) across multiple Python projects"
 category = "dev"
 optional = false
@@ -514,7 +514,7 @@ python-slugify = "*"
 requests = "*"
 "ruamel.yaml" = "*"
 sortedcontainers = "*"
-toml = "<0.10.1"
+toml = "*"
 
 [package.extras]
 lint = ["pylint"]
@@ -1131,8 +1131,8 @@ more-itertools = [
     {file = "more_itertools-8.2.0-py3-none-any.whl", hash = "sha256:5dd8bcf33e5f9513ffa06d5ad33d78f31e1931ac9a18f33d37e77a180d393a7c"},
 ]
 nitpick = [
-    {file = "nitpick-0.23.0-py3-none-any.whl", hash = "sha256:5b37856993686f2fa928b0acb1b0b591106e9c7e78437fec506ffe0c9efa2b88"},
-    {file = "nitpick-0.23.0.tar.gz", hash = "sha256:15e1760b3b4ca77e48096171ee656875d315f2d8825da71b7abc89f2c8ba4ae0"},
+    {file = "nitpick-0.23.1-py3-none-any.whl", hash = "sha256:8102a6ae6ebd716cf796a614e37d9bb7f47851bb53f1c1edbf07675143ed55b9"},
+    {file = "nitpick-0.23.1.tar.gz", hash = "sha256:f2293781c1357baa8969ada485e1c60503b1097375a73c1f2a3c988552071e6a"},
 ]
 packaging = [
     {file = "packaging-20.3-py2.py3-none-any.whl", hash = "sha256:82f77b9bee21c1bafbf35a84905d604d5d1223801d639cf3ed140bd651c08752"},
