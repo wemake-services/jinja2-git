@@ -16,8 +16,8 @@ authors = [
 
 readme = "README.md"
 
-repository = "https://github.com/sobolevn/jinja2-git"
-homepage = "https://github.com/sobolevn/jinja2-git"
+repository = "https://github.com/wemake-services/jinja2-git"
+homepage = "https://github.com/wemake-services/jinja2-git"
 
 keywords = [
     "jinja2",
