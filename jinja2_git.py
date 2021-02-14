@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import subprocess  # noqa: S404
 
 from jinja2 import nodes

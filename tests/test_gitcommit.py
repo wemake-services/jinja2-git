@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import subprocess
 
 _SHORT_COMMIT_LENGTH = 7
