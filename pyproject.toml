@@ -50,7 +50,7 @@ jinja2 = "^2.10"
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
 pytest-cov = "^2.11"
-pytest-randomly = "^3.5"
+pytest-randomly = "^3.7"
 
 wemake-python-styleguide = "^0.15"
 flake8-pytest-style = "^1.4"
