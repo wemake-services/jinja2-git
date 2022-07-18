@@ -1,8 +1,8 @@
 import subprocess  # noqa: S404
 
 from jinja2 import nodes
-from jinja2.parser import Parser
 from jinja2.ext import Extension
+from jinja2.parser import Parser
 
 
 class GitExtension(Extension):
