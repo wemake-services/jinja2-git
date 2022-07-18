@@ -3,6 +3,20 @@
 We follow Semantic Versions since the `0.1.0` release.
 
 
+## Version 1.2.0
+
+### Features
+
+- Adds `python3.10` support
+- Adds support for `jinja2>=2.10,<4.0`
+
+### Misc
+
+- Adds `mypy` support and dev-only type annotations
+- Updates all dev deps
+- Adds coverage support back
+
+
 ## Version 1.1.0
 
 ### Features
