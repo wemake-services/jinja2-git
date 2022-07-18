@@ -1,15 +1,6 @@
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-
-[tool.nitpick]
-style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style.toml"
-
-
 [tool.poetry]
 name = "jinja2-git"
-version = "1.1.0"
+version = "1.2.0"
 description = "Jinja2 extension to handle git-specific things"
 
 license = "MIT"
@@ -57,3 +48,14 @@ flake8-pytest-style = "^1.5"
 nitpick = "^0.29"
 
 safety = "^2.1"
+mypy = "^0.961"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style.toml"
+
