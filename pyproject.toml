@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "jinja2-git"
-version = "1.2.0"
+version = "1.3.0"
 description = "Jinja2 extension to handle git-specific things"
 
 license = "MIT"
 
 authors = [
-    "Nikita Sobolev <mail@sobolenv.me>",
-    "Mikhail Akimov <daggerito@gmail.com>"
+  "Nikita Sobolev <mail@sobolenv.me>",
+  "Mikhail Akimov <daggerito@gmail.com>"
 ]
 
 readme = "README.md"
@@ -16,46 +16,47 @@ repository = "https://github.com/wemake-services/jinja2-git"
 homepage = "https://github.com/wemake-services/jinja2-git"
 
 keywords = [
-    "jinja2",
-    "jinja2-extension",
-    "jinja2-plugin",
-    "git",
+  "jinja2",
+  "jinja2-extension",
+  "jinja2-plugin",
+  "git",
 ]
 
 classifiers=[
-    "Development Status :: 5 - Production/Stable",
-    "Environment :: Console",
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Topic :: Software Development :: Libraries :: Python Modules",
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
+[tool.poetry.urls]
+"Funding" = "https://github.com/sponsors/wemake-services"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 
 jinja2 = ">=2.10,<4.0"
 
-
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.test.dependencies]
 pytest = "^7.0"
-pytest-cov = "^3.0"
+pytest-cov = "^4.0"
 pytest-randomly = "^3.10"
 
-wemake-python-styleguide = "^0.16"
+wemake-python-styleguide = "^0.17"
 flake8-pytest-style = "^1.5"
 nitpick = "^0.29"
 
-safety = "^2.1"
-mypy = "^0.971"
+safety = "^2.2"
+mypy = "^0.982"
 
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.2.0"]
 build-backend = "poetry.core.masonry.api"
 
 
 [tool.nitpick]
-style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style.toml"
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style-wemake.toml"
 
