@@ -3,6 +3,13 @@
 We follow Semantic Versions since the `0.1.0` release.
 
 
+## Version 1.3.0
+
+### Features
+
+- Drops `python3.6` support
+
+
 ## Version 1.2.0
 
 ### Features
