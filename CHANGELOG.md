@@ -2,11 +2,14 @@
 
 We follow [Semantic Versioning](https://semver.org/) since the `0.1.0` release.
 
-## Version 1.3.1
+
+## Version 1.4.0
 
 ### Features
 
 - Explicitly support `python3.11` and `python3.12`
+- Drops `python3.7` and `python3.8`
+
 
 ## Version 1.3.0
 
