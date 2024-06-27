@@ -1,7 +1,12 @@
 # Version history
 
-We follow Semantic Versions since the `0.1.0` release.
+We follow [Semantic Versioning](https://semver.org/) since the `0.1.0` release.
 
+## Version 1.3.1
+
+### Features
+
+- Explicitly support `python3.11` and `python3.12`
 
 ## Version 1.3.0
 
