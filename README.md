@@ -17,7 +17,7 @@ $ pip install jinja2-git
 ## Reasoning
 
 This plugin is used to render commit hash in `jinja2` templates. We are
-using it to render our template version in `cookicutter`:
+using it to render our template version in `cookiecutter`:
 
 - [wemake-django-template](https://github.com/wemake-services/wemake-django-template)
 - [wemake-vue-template](https://github.com/wemake-services/wemake-vue-template)
