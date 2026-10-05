@@ -14,7 +14,6 @@ readme = "README.md"
 
 repository = "https://github.com/wemake-services/jinja2-git"
 homepage = "https://github.com/wemake-services/jinja2-git"
-"Changelog" = "https://github.com/wemake-services/jinja2-git/blob/master/CHANGELOG.md"
 
 keywords = [
   "jinja2",
@@ -34,6 +33,7 @@ classifiers=[
 
 [tool.poetry.urls]
 "Funding" = "https://github.com/sponsors/wemake-services"
+"Changelog" = "https://github.com/wemake-services/jinja2-git/blob/master/CHANGELOG.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
