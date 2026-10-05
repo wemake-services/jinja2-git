@@ -14,6 +14,7 @@ readme = "README.md"
 
 repository = "https://github.com/wemake-services/jinja2-git"
 homepage = "https://github.com/wemake-services/jinja2-git"
+"Changelog" = "https://github.com/wemake-services/jinja2-git/blob/master/CHANGELOG.md"
 
 keywords = [
   "jinja2",
