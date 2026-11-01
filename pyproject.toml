@@ -7,27 +7,21 @@ requires = [ "poetry-core>=2" ]
 name = "jinja2-git"
 version = "1.5.0"
 description = "Jinja2 extension to handle git-specific things"
-
 license = "MIT"
-
 authors = [
   "Nikita Sobolev <mail@sobolenv.me>",
   "Mikhail Akimov <daggerito@gmail.com>"
 ]
-
 readme = "README.md"
-
-repository = "https://github.com/wemake-services/jinja2-git"
 homepage = "https://github.com/wemake-services/jinja2-git"
-
+repository = "https://github.com/wemake-services/jinja2-git"
 keywords = [
+  "git",
   "jinja2",
   "jinja2-extension",
   "jinja2-plugin",
-  "git",
 ]
-
-classifiers=[
+classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Environment :: Console",
   "Intended Audience :: Developers",
@@ -36,26 +30,26 @@ classifiers=[
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
-[tool.poetry.urls]
-"Funding" = "https://github.com/sponsors/wemake-services"
-"Changelog" = "https://github.com/wemake-services/jinja2-git/blob/master/CHANGELOG.md"
-
 [tool.poetry.dependencies]
 python = "^3.11"
-
 jinja2 = ">=2.10,<4.0"
 typing_extensions = ">=4"
 
 [tool.poetry.group.dev.dependencies]
+covdefaults = "^2.3"
+mypy = "^2.4"
 pytest = "^9.2"
 pytest-cov = "^5.0"
 pytest-randomly = "^5.0"
-covdefaults = "^2.3"
-
 ruff = "^0.17"
 wemake-python-styleguide = "^1.8"
 
-mypy = "^2.4"
+[tool.poetry.urls]
+Changelog = """\
+  https://github.com/wemake-services/jinja2-git/blob/master/CHANGELOG.md\
+  """
+Funding = "https://github.com/sponsors/wemake-services"
+
 
 [tool.ruff]
 target-version = "py311"
@@ -68,6 +62,9 @@ output-prefer-rule-codes = true
 [tool.ruff.format]
 quote-style = "single"
 docstring-code-format = true
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = [ "S101" ]
 
 [tool.ruff.lint]
 select = [
@@ -140,9 +137,6 @@ flake8-quotes.inline-quotes = "single"
 mccabe.max-complexity = 6
 pydocstyle.convention = "google"
 
-[tool.ruff.lint.per-file-ignores]
-"tests/*.py" = [ "S101" ]
-
 
 [tool.codespell]
 # codespell configuration: https://github.com/codespell-project/codespell
@@ -194,11 +188,6 @@ strict = true
 
 
 [tool.pytest.ini_options]
-# pytest config: http://doc.pytest.org/en/latest/customize.html
-# Strict `@xfail` by default:
-xfail_strict = true
-# Fail on warnings:
-filterwarnings = [ "error" ]
 addopts = [
   "--strict-config",
   "--strict-markers",
@@ -216,6 +205,11 @@ addopts = [
   # Ignores:
   "--ignore=docs",
 ]
+# pytest config: http://doc.pytest.org/en/latest/customize.html
+# Strict `@xfail` by default:
+xfail_strict = true
+# Fail on warnings:
+filterwarnings = [ "error" ]
 
 
 [tool.coverage.run]
