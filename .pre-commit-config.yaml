@@ -1,0 +1,91 @@
+repos:
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 39478bf2c099a58683d3f1aedf675105318b078d  # frozen: 0.39.0
+    hooks:
+      - id: check-dependabot
+      - id: check-github-workflows
+      - id: check-github-actions
+      - id: check-readthedocs
+
+  - repo: https://github.com/rhysd/actionlint
+    rev: 914e7df21a07ef503a81201c76d2b11c789d3fca  # frozen: v1.7.12
+    hooks:
+      - id: actionlint
+        additional_dependencies:
+          - "github.com/wasilibs/go-shellcheck/cmd/shellcheck@latest"
+
+  - repo: https://github.com/woodruffw/zizmor-pre-commit
+    rev: c92afdf2c6ca336aaa8f39e2bd8d48f62dbd8e1f  # frozen: v1.31.1
+    hooks:
+      - id: zizmor
+        args: ["--no-progress", "--fix"]
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: a6564f5d57444e123433a5c9af733e3975c77229  # frozen: v0.11.0.1-1
+    hooks:
+      - id: shellcheck
+        args: ["--severity=style"]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: 25bcf95026b96e2dd3c0aec3090c3d6ef6ca2e6c  # frozen: v0.17.3
+    hooks:
+      - id: ruff-check
+        args: ["--exit-non-zero-on-fix"]
+      - id: ruff-format
+
+  - repo: https://github.com/tox-dev/pyproject-fmt
+    rev: "50e0f3aee9dc5747a5f173f79a7417403c18dda6"  # frozen: v2.30.3
+    hooks:
+      - id: pyproject-fmt
+
+  - repo: https://github.com/sphinx-contrib/sphinx-lint
+    rev: c883505f64b59c3c5c9375191e4ad9f98e727ccd  # frozen: v1.0.2
+    hooks:
+      - id: sphinx-lint
+        args: ["--enable=all"]
+        files: ^docs/
+
+  - repo: https://github.com/EbodShojaei/bake
+    rev: a39df91c8e2c8ee584f81ff8d7d00f137a5fc160  # frozen: v1.4.6
+    hooks:
+      - id: mbake-format
+        args: ["--config=.github/bake.toml"]
+      - id: mbake-validate
+
+  - repo: https://github.com/crate-ci/typos
+    rev: 9023c1f779400877cafdd98052113fc777e2cfdc  # frozen: v1.51.1
+    hooks:
+      - id: typos
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: 57b21406f092110c18776e39b0bda50d37c945c8  # frozen: v2.4.3
+    hooks:
+    - id: codespell
+      args: ["--write-changes"]
+      additional_dependencies:
+        - tomli
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-xml
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-illegal-windows-names
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+      - id: check-case-conflict
+
+  # Should be the last:
+  - repo: meta
+    hooks:
+      - id: check-useless-excludes
+
+ci:
+  autofix_prs: true
+  autoupdate_schedule: weekly
+  submodules: false

@@ -3,6 +3,14 @@
 We follow [Semantic Versioning](https://semver.org/) since the `0.1.0` release.
 
 
+## Version 1.5.0
+
+### Features
+
+- Explicitly support `python3.13`, `python3.14`, and `python3.15`
+- Drops `python3.9` and `python3.10`
+
+
 ## Version 1.4.0
 
 ### Features
