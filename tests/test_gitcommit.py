@@ -1,12 +1,12 @@
 import subprocess  # noqa: S404
 
-from jinja2 import Environment
+from jinja2 import Environment, Template
 
 _SHORT_COMMIT_LENGTH = 7
 _FULL_COMMIT_LENGTH = 40
 
 
-def _assert_is_commit(template: str) -> None:
+def _assert_is_commit(template: Template) -> None:
     commit = (
         subprocess  # noqa: S603
         .check_output(
